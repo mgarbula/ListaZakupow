@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".New_list.NewList">
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Kategorie produktów"
+        android:textSize="25dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/button_owoce"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/button_warzywa"
+        android:layout_marginRight="30dp"
+        android:text="Owoce" />
+
+    <Button
+        android:id="@+id/button_warzywa"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Warzywa" />
+
+    <Button
+        android:id="@+id/button_pieczywo"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/button_warzywa"
+        android:layout_marginLeft="30dp"
+        android:text="Pieczywo" />
+
+    <Button
+        android:id="@+id/button_nabial"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_owoce"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/button_sypkie"
+        android:layout_marginRight="30dp"
+        android:text="Nabiał" />
+
+    <Button
+        android:id="@+id/button_sypkie"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_warzywa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Sypkie" />
+
+    <Button
+        android:id="@+id/button_mieso"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_owoce"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/button_sypkie"
+        android:layout_marginLeft="30dp"
+        android:text="Mięso" />
+
+    <Button
+        android:id="@+id/button_napoje"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_sypkie"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Napoje" />
+
+    <Button
+        android:id="@+id/button_slodycze"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_nabial"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/button_napoje"
+        android:layout_marginRight="30dp"
+        android:text="Słodycze" />
+
+    <Button
+        android:id="@+id/button_inne"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_mieso"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/button_napoje"
+        android:layout_marginLeft="30dp"
+        android:text="Inne" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/button_inne"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/recycle_view"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="ZAPISZ"/>
+
+
+
+
+</RelativeLayout>
